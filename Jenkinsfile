@@ -10,7 +10,7 @@ pipeline {
     timestamps()
   }
 
- /* stages {
+ /*stages {
     stage('PHPUnit Test') {
       steps {
         echo 'Running PHPUnit...'
@@ -22,7 +22,7 @@ stage("Create new tag") {
                expression {env.BRANCH_NAME == 'master'}
             }                     
             steps {
-             sshagent (credentials: ['test-git-tag'])                        
+             sshagent (credentials: ['mygit'])                        
                 {
                 script {
                    
